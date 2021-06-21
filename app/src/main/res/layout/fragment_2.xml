@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frag2">
+
+
+    <Button
+        android:id="@+id/upB"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:tag="up"
+        android:text="˄"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/leftB"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:tag="left"
+        android:text="˂"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@id/selectB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/upB" />
+
+    <Button
+        android:id="@+id/selectB"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:tag="select"
+        android:text="ο"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@id/rightB"
+        app:layout_constraintStart_toEndOf="@id/leftB"
+        app:layout_constraintTop_toBottomOf="@id/upB" />
+
+    <Button
+        android:id="@+id/rightB"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:tag="right"
+        android:text="˃"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/selectB"
+        app:layout_constraintTop_toBottomOf="@id/upB" />
+
+    <Button
+        android:id="@+id/downB"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:tag="down"
+        android:text="˅"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/leftB" />
+
+    <Button
+        android:id="@+id/backB"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:tag="back"
+        android:text="BACK"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/downB"
+        app:layout_constraintEnd_toStartOf="@id/homeB"/>
+
+    <Button
+        android:id="@+id/homeB"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:tag="home"
+        android:text="HOME"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@id/searchB"
+        app:layout_constraintStart_toEndOf="@id/backB"
+        app:layout_constraintTop_toBottomOf="@id/downB" />
+
+    <Button
+        android:id="@+id/searchB"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="20dp"
+        android:tag="search"
+        android:text="SEARCH"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/homeB"
+        app:layout_constraintTop_toBottomOf="@id/downB" />
+
+    <Button
+        android:id="@+id/playB"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:tag="play"
+        android:text="PLAY"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/homeB"
+        app:layout_constraintTop_toBottomOf="@id/searchB" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

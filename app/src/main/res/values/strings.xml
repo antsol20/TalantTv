@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TalantTv</string>
+    <string name="tab_text_1">Virgin</string>
+    <string name="tab_text_2">Roku</string>
+    <string name="tab_text_3">Matrix</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
